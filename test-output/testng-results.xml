@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="93" total="94" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="71089" started-at="2018-03-16T09:20:09Z" finished-at="2018-03-16T09:21:20Z">
+    <groups>
+      <group name="Critical_Regression">
+        <method signature="DriverScript_RoleMgmt.VerifyCreateGroupRoleFunctionality()[pri:215, instance:com.automation.drivers.DriverScript_RoleMgmt@6536e911]" name="VerifyCreateGroupRoleFunctionality" class="com.automation.drivers.DriverScript_RoleMgmt"/>
+      </group> <!-- Critical_Regression -->
+      <group name="Smoke">
+        <method signature="DriverScript_RoleMgmt.VerifyCreateGroupRoleFunctionality()[pri:215, instance:com.automation.drivers.DriverScript_RoleMgmt@6536e911]" name="VerifyCreateGroupRoleFunctionality" class="com.automation.drivers.DriverScript_RoleMgmt"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test name="Default test" duration-ms="71089" started-at="2018-03-16T09:20:09Z" finished-at="2018-03-16T09:21:20Z">
+      <class name="com.automation.drivers.DriverScript_RoleMgmt">
+        <test-method status="PASS" signature="start()[pri:0, instance:com.automation.drivers.DriverScript_RoleMgmt@6536e911]" name="start" is-config="true" duration-ms="9723" started-at="2018-03-16T14:49:59Z" finished-at="2018-03-16T14:50:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="VerifyCreateGroupRoleFunctionality()[pri:215, instance:com.automation.drivers.DriverScript_RoleMgmt@6536e911]" name="VerifyCreateGroupRoleFunctionality" duration-ms="67872" started-at="2018-03-16T14:50:09Z" description="TC-02-P-Creating User assigning the create group Role created and check the assigned permission functionality to the user" finished-at="2018-03-16T14:51:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCreateGroupRoleFunctionality -->
+        <test-method status="PASS" signature="exit(org.testng.ITestResult)[pri:0, instance:com.automation.drivers.DriverScript_RoleMgmt@6536e911]" name="exit" is-config="true" duration-ms="2665" started-at="2018-03-16T14:51:17Z" finished-at="2018-03-16T14:51:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyCreateGroupRoleFunctionality status=SUCCESS method=DriverScript_RoleMgmt.VerifyCreateGroupRoleFunctionality()[pri:215, instance:com.automation.drivers.DriverScript_RoleMgmt@6536e911] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exit -->
+        <test-method status="PASS" signature="clean()[pri:0, instance:com.automation.drivers.DriverScript_RoleMgmt@6536e911]" name="clean" is-config="true" duration-ms="796" started-at="2018-03-16T14:51:20Z" finished-at="2018-03-16T14:51:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clean -->
+      </class> <!-- com.automation.drivers.DriverScript_RoleMgmt -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

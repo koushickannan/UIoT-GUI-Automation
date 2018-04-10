@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><ContainerProfile xmlns="http://www.hp.com/schema/m2m/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">	
+	<ContainerProfileName>HealthProfileKK-team3-Automation-7895</ContainerProfileName>
+	<Containers>
+		<Container acp="BACKEND(DONT_DELETE)" name="BATTERY" parent="" sequence="1">
+			<Payload type="" value="" xPath="BAT"/>
+		</Container>
+		<Container acp="READ_ONLY" name="TEMPERATURE1" parent="" sequence="2">
+			<Payload type="" value="" xPath="TEMP"/>
+		</Container>
+		<Container acp="READ_ONLY" name="GAS_USAGE1" parent="" sequence="3">
+			<Payload type="" value="" xPath="Fuel"/>
+			<Payload type="" value="" xPath="Location"/>
+		</Container>		
+	</Containers>
+</ContainerProfile>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-passed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\rajuk\AppData\Local\Temp\testng-eclipse--1920031039\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.automation.drivers.DriverScript_RoleMgmt" hash-for-method="VerifyCreateGroupRoleFunctionality">VerifyCreateGroupRoleFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.automation.drivers.DriverScript_RoleMgmt</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyCreateGroupRoleFunctionality">
+                  </a> <!-- VerifyCreateGroupRoleFunctionality -->
+                  <span class="method-name">VerifyCreateGroupRoleFunctionality</span>
+                  <em>
+(TC-02-P-Creating User assigning the create group Role created and check the assigned permission functionality to the user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\rajuk\AppData\Local\Temp\testng-eclipse--1920031039\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.automation.drivers.DriverScript_RoleMgmt&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;VerifyCreateGroupRoleFunctionality&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.automation.drivers.DriverScript_RoleMgmt --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Critical_Regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyCreateGroupRoleFunctionality</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyCreateGroupRoleFunctionality</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'VerifyCreateGroupRoleFunctionality')
+data.setCell(0, 2, 'com.automation.drivers.DriverScript_RoleMgmt')
+data.setCell(0, 3, 67872);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">93 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.automation.drivers.DriverScript_RoleMgmt</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">SelectAllRoleWithExpandingTree_Topology</span>
+                <br/>
+                <span class="ignored-method-name">AppEntity_SearchApp</span>
+                <br/>
+                <span class="ignored-method-name">SearchCPRoleandVerify</span>
+                <br/>
+                <span class="ignored-method-name">DeleteGroupPermission_CustomerManagement</span>
+                <br/>
+                <span class="ignored-method-name">AppEntity_DataProp</span>
+                <br/>
+                <span class="ignored-method-name">AssignDeleteUserProfileRoleAndVerify</span>
+                <br/>
+                <span class="ignored-method-name">DeleteUserWithRole_DC</span>
+                <br/>
+                <span class="ignored-method-name">CreateAddACPRole_ACP</span>
+                <br/>
+                <span class="ignored-method-name">AppEntity_DeleteResource_Group</span>
+                <br/>
+                <span class="ignored-method-name">VerifySearchACPPermission_ACP</span>
+                <br/>
+                <span class="ignored-method-name">CreateGroupRoleandVerify</span>
+                <br/>
+                <span class="ignored-method-name">VerifydeleteGroupPermission_UserManagement</span>
+                <br/>
+                <span class="ignored-method-name">CreateAssignACPRole_ACP</span>
+                <br/>
+                <span class="ignored-method-name">SelectAllRolePerWithoutExpanding_AE</span>
+                <br/>
+                <span class="ignored-method-name">AssignAddUserProfileRoleAndVerify</span>
+                <br/>
+                <span class="ignored-method-name">AppEntity_DeleteAppUse</span>
+                <br/>
+                <span class="ignored-method-name">DeleteUserProfileRole</span>
+                <br/>
+                <span class="ignored-method-name">DeleteRoleWithoutUser_ACP</span>
+                <br/>
+                <span class="ignored-method-name">DeleteGroupRoleandVerify</span>
+                <br/>
+                <span class="ignored-method-name">VerfiyCreateDCRoleFunctionality</span>
+                <br/>
+                <span class="ignored-method-name">AppEntity_ViewApp</span>
+                <br/>
+                <span class="ignored-method-name">AppEntity_DeleteSubs</span>
+                <br/>
+                <span class="ignored-method-name">SelectAll_Permissions_WithoutTreeExpand_ACP</span>
+                <br/>
+                <span class="ignored-method-name">CreateUserPermission_UserManagement</span>
+                <br/>
+                <span class="ignored-method-name">AppEntity_CreateResource_Group</span>
+                <br/>
+                <span class="ignored-method-name">AppEntity_UpdateApp</span>
+                <br/>
+                <span class="ignored-method-name">DeleteUserPermission_UserManagement</span>
+                <br/>
+                <span class="ignored-method-name">UpdateuserPermission_UserManagement</span>
+                <br/>
+                <span class="ignored-method-name">VerfiySearchCPRoleFunctionality</span>
+                <br/>
+                <span class="ignored-method-name">AppEntity_DataPropUse</span>
+                <br/>
+                <span class="ignored-method-name">AddCPRoleandVerify</span>
+                <br/>
+                <span class="ignored-method-name">DeleteRoleWithUser_AE</span>
+                <br/>
+                <span class="ignored-method-name">VerifyAssignACPPermission_ACP</span>
+                <br/>
+                <span class="ignored-method-name">DeleteUserWithRole_CP</span>
+                <br/>
+                <span class="ignored-method-name">ViewTopologyPermissionAfter_SelectAll_Topology</span>
+                <br/>
+                <span class="ignored-method-name">CreateViewPermission_Topology</span>
+                <br/>
+                <span class="ignored-method-name">AppEntity_UpdateAppUse</span>
+                <br/>
+                <span class="ignored-method-name">AppEntity_UpdateResource_Group</span>
+                <br/>
+                <span class="ignored-method-name">AppEntity_VIewResource_Group</span>
+                <br/>
+                <span class="ignored-method-name">VerifyupdatePermission_UserManagement</span>
+                <br/>
+                <span class="ignored-method-name">VerifyDeleteGroupRoleFunctionality</span>
+                <br/>
+                <span class="ignored-method-name">AppEntity_ViewAppUse</span>
+                <br/>
+                <span class="ignored-method-name">SelectAllPermissionwithExpanding_Cust</span>
+                <br/>
+                <span class="ignored-method-name">SelectAllPermissionwithExpanding_CP</span>
+                <br/>
+                <span class="ignored-method-name">ViewUserProfileRole</span>
+                <br/>
+                <span class="ignored-method-name">UpdateGroupRoleandVerify</span>
+                <br/>
+                <span class="ignored-method-name">AppEntity_DeleteApp</span>
+                <br/>
+                <span class="ignored-method-name">SelectAllRolePerWithoutExpanding_Cust</span>
+                <br/>
+                <span class="ignored-method-name">DeleteRoleWithoutUser_Topology</span>
+                <br/>
+                <span class="ignored-method-name">UploadUserPermission_UserManagement</span>
+                <br/>
+                <span class="ignored-method-name">VerifydeleteUserPermission_UserManagement</span>
+                <br/>
+                <span class="ignored-method-name">VerifyupdateGroupPermission_UserManagement</span>
+                <br/>
+                <span class="ignored-method-name">CreateSearchACPRole_ACP</span>
+                <br/>
+                <span class="ignored-method-name">SelectAllRolePerWithoutExpanding_CP</span>
+                <br/>
+                <span class="ignored-method-name">DeleteRoleWithUser_ACP</span>
+                <br/>
+                <span class="ignored-method-name">SelectAllPermisssionsWithTreeExpand_ACP</span>
+                <br/>
+                <span class="ignored-method-name">SelectAllPermissionwithExpanding_DC</span>
+                <br/>
+                <span class="ignored-method-name">AppEntity_SearchAppUse</span>
+                <br/>
+                <span class="ignored-method-name">VerifyViewGroupPermission_UserManagement</span>
+                <br/>
+                <span class="ignored-method-name">AppEntity_AddSubsUse</span>
+                <br/>
+                <span class="ignored-method-name">VerifyViewPermission_UserManagement</span>
+                <br/>
+                <span class="ignored-method-name">test_verify_createUser</span>
+                <br/>
+                <span class="ignored-method-name">VerifyupdateAssetPermission_UserManagement</span>
+                <br/>
+                <span class="ignored-method-name">VerifyACPPermission_ACP</span>
+                <br/>
+                <span class="ignored-method-name">CreateSearchAssetPermission_UserManagement</span>
+                <br/>
+                <span class="ignored-method-name">SelectAllRolePerWithoutExpanding_DC</span>
+                <br/>
+                <span class="ignored-method-name">AppEntity_CreateAppUse</span>
+                <br/>
+                <span class="ignored-method-name">EditUserProfileRole</span>
+                <br/>
+                <span class="ignored-method-name">VerfiyAddCPRoleFunctionality</span>
+                <br/>
+                <span class="ignored-method-name">CreateviewGroupPermission_UserManagement</span>
+                <br/>
+                <span class="ignored-method-name">AddUserProfileRole</span>
+                <br/>
+                <span class="ignored-method-name">AppEntity_CreateApp</span>
+                <br/>
+                <span class="ignored-method-name">AppEntity_NewRule</span>
+                <br/>
+                <span class="ignored-method-name">CreateDCRoleandVerify</span>
+                <br/>
+                <span class="ignored-method-name">DeleteUserWithoutRole_DC</span>
+                <br/>
+                <span class="ignored-method-name">ViewGroupRoleandVerify</span>
+                <br/>
+                <span class="ignored-method-name">DeleteRoleWithoutUser_AE</span>
+                <br/>
+                <span class="ignored-method-name">VerifyUploadUserPermission_UserManagement</span>
+                <br/>
+                <span class="ignored-method-name">SelectAllRoleWithoutExpandingTree_Topology</span>
+                <br/>
+                <span class="ignored-method-name">VerifysearchAssetPermission_UserManagement</span>
+                <br/>
+                <span class="ignored-method-name">VerifyUpdateGroupRoleFunctionality</span>
+                <br/>
+                <span class="ignored-method-name">DeleteRoleWithUser_Topology</span>
+                <br/>
+                <span class="ignored-method-name">CreateviewPermission_UserManagement</span>
+                <br/>
+                <span class="ignored-method-name">ApplicationEntity_allPermissions</span>
+                <br/>
+                <span class="ignored-method-name">VerifyViewPermission_Topology</span>
+                <br/>
+                <span class="ignored-method-name">AppEntity_AddSubs</span>
+                <br/>
+                <span class="ignored-method-name">AssignViewUserProfileRoleAndVerify</span>
+                <br/>
+                <span class="ignored-method-name">DeleteUserWithoutRole_CP</span>
+                <br/>
+                <span class="ignored-method-name">VerifyAddACPPermission_ACP</span>
+                <br/>
+                <span class="ignored-method-name">CreateviewDevicePermission_UserManagement</span>
+                <br/>
+                <span class="ignored-method-name">AssignEditUserProfileRoleAndVerify</span>
+                <br/>
+                <span class="ignored-method-name">CreateupdateGroupPermission_CustomerManagement</span>
+                <br/>
+                <span class="ignored-method-name">VerifyViewGroupRoleFunctionality</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.drivers.DriverScript_RoleMgmt</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">start</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">VerifyCreateGroupRoleFunctionality</span>
+                <span class="method-start">9764 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">exit([TestResult name=VerifyCreateGroupRoleFunctionality status=SUCCESS method=DriverScript_RoleMgmt.Veri...)</span>
+                <span class="method-start">78145 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">clean</span>
+                <span class="method-start">80885 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

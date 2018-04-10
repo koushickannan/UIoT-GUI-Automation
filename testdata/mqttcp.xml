@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="yes"?>
+<ContainerProfile xmlns="http://www.hp.com/schema/m2m/">
+    <ContainerProfileName>MQTTCP</ContainerProfileName>
+    <Containers>
+        <Container name="data" parent="" acp="READ_ONLY" sequence="1"/>
+        <Container name="commands" parent="" acp="FullAccess" sequence="2" type="command"/>
+    </Containers>
+</ContainerProfile>

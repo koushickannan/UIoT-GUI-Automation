@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><DeviceProfile xmlns="http://www.hp.com/schema/m2m/">
+    <Metadata>
+        <Manufacturer>HTTPAuto</Manufacturer>
+        <Model>oneM2M</Model>
+        <Version>3.0</Version>
+        <DeviceType>TEST</DeviceType>
+        <DeviceSubType>Sensors</DeviceSubType>
+        <TransportChannel/>
+        <Device-Description>SDK Device Controller</Device-Description>
+        <ClassOfDevice>DEFAULT</ClassOfDevice>
+        <DeviceProfileType>HPIOT</DeviceProfileType>
+        <OntologyReference xmlns:tns="http://www.hp.com/schema/m2m/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <AssetParams Category="IoT" DataType="String" Decoding="none" DefaultValue="" DisplayName="DEVICE-ID" Mandatory="true" MinLength="1" ParamName="ID" ReadOnly="false"/>
+        <AssetParams Category="IoT" ChoiceElements="GenericFlow,Non-GenericFlow" DataType="Choice" Decoding="none" DisplayName="Flow" Mandatory="true" MaxLength="16" MinLength="0" ParamName="FlowId" ReadOnly="false"/>
+        <AssetParams Category="IoT" DataType="String" Decoding="none" DefaultValue="JSON" DisplayName="ContentType" Mandatory="true" MaxLength="16" MinLength="0" ParamName="ContentType" ReadOnly="false"/>
+        <AssetParams Category="IoT" DataType="boolean" Decoding="none" DefaultValue="false" DisplayName="Decode" Mandatory="true" ParamName="Decode" ReadOnly="false"/>
+        <AssetParams Category="IoT" DataType="String" Decoding="none" DefaultValue="SDKCodecId" DisplayName="DecodeType" Mandatory="true" MaxLength="16" MinLength="0" ParamName="DecodeType" ReadOnly="false"/>
+        <AssetParams Category="IoT" DataType="String" Decoding="none" DefaultValue="content" DisplayName="DecodeInputKey" Mandatory="true" MaxLength="30" MinLength="0" ParamName="DecodeInputKey" ReadOnly="true"/>
+        <AssetParams Category="IoT" DataType="String" Decoding="none" DefaultValue="REPLACE" DisplayName="DecodeMode" Mandatory="true" MaxLength="16" MinLength="0" ParamName="DecodeMode" ReadOnly="false"/>
+        <AssetParams Category="IoT" DataType="boolean" Decoding="none" DefaultValue="false" DisplayName="Encode" Mandatory="true" ParamName="Encode" ReadOnly="false"/>
+        <AssetParams Category="IoT" DataType="String" Decoding="none" DefaultValue="SDKCodecId" DisplayName="EncodeType" Mandatory="true" MaxLength="16" MinLength="0" ParamName="EncodeType" ReadOnly="false"/>
+        <AssetParams Category="IoT" DataType="String" Decoding="none" DefaultValue="content" DisplayName="EncodeInputKey" Mandatory="true" MaxLength="30" MinLength="0" ParamName="EncodeInputKey" ReadOnly="false"/>
+        <AssetParams Category="IoT" DataType="String" Decoding="none" DefaultValue="REPLACE" DisplayName="EncodeMode" Mandatory="true" MaxLength="16" MinLength="0" ParamName="EncodeMode" ReadOnly="false"/>
+        <AssetParams Category="IoT" DataType="String" Decoding="none" DefaultValue="content" DisplayName="UplinkPayloadXpath" Mandatory="false" MaxLength="100" MinLength="0" ParamName="UplinkPayloadXpath" ReadOnly="false"/>
+        <AssetParams Category="IoT" DataType="String" Decoding="none" DefaultValue="content" DisplayName="DownlinkPayloadXpath" Mandatory="true" MaxLength="100" MinLength="0" ParamName="DownlinkPayloadXpath" ReadOnly="false"/>
+        <AssetParams Category="IoT" DataType="boolean" Decoding="none" DefaultValue="false" DisplayName="Decryption" Mandatory="true" ParamName="Decryption" ReadOnly="false"/>
+        <AssetParams Category="IoT" DataType="boolean" Decoding="none" DefaultValue="false" DisplayName="Encryption" Mandatory="true" ParamName="Encryption" ReadOnly="false"/>
+        <AssetParams Category="IoT" ChoiceElements="false,true" DataType="Choice" Decoding="none" DefaultValue="false" DisplayName="Test Profile" Mandatory="false" ParamName="TestProfile" ReadOnly="false"/>
+        <DeviceIdentifier>
+            <identifiers id="0" name="http_oneM2M">
+                <identifier id="0" name="ID">ID</identifier>
+            </identifiers>
+            <identifiers id="1" name="IoT">
+                <identifier id="1" name="ID">ID</identifier>
+            </identifiers>
+        </DeviceIdentifier>
+        <TransportChannels>
+            <TransportChannel reestablishment="true">http_oneM2M</TransportChannel>
+        </TransportChannels>
+        <MachineId>ID</MachineId>
+    </Metadata>
+    <DeviceMgmt>
+        <ManagementOperations>
+            <ManagementOperation>
+                <name>Configuration</name>
+                <Identifier>Configuration</Identifier>
+                <DeviceMgmtProfiles>
+                    <DeviceMgmtProfile>
+                        <ProfileName>Device Information</ProfileName>
+                        <Operations>
+                            <Operation>
+                                <Label>Read</Label>
+                                <OperationType>R</OperationType>
+                                <MethodType>GET</MethodType>
+                            </Operation>
+                        </Operations>
+                        <Datatype>String</Datatype>
+                        <Action>getMetadata</Action>
+                        <attached>true</attached>
+                        <CmdType>0</CmdType>
+                        <CmdObject>1007</CmdObject>
+                    </DeviceMgmtProfile>
+                </DeviceMgmtProfiles>
+            </ManagementOperation>
+            <ManagementOperation>
+                <name>Diagnostic and Monitoring</name>
+                <Identifier>Diagnostic and Monitoring</Identifier>
+                <DeviceMgmtProfiles>
+                    <DeviceMgmtProfile>
+                        <ProfileName>Memory</ProfileName>
+                        <Operations>
+                            <Operation>
+                                <Label>Read</Label>
+                                <OperationType>R</OperationType>
+                                <MethodType>GET</MethodType>
+                            </Operation>
+                        </Operations>
+                        <Datatype>String</Datatype>
+                        <Action>String</Action>
+                        <attached>true</attached>
+                        <CmdType>0</CmdType>
+                        <CmdObject>1003</CmdObject>
+                    </DeviceMgmtProfile>
+                    <DeviceMgmtProfile>
+                        <ProfileName>Battery</ProfileName>
+                        <Operations>
+                            <Operation>
+                                <Label>Read</Label>
+                                <OperationType>R</OperationType>
+                                <MethodType>GET</MethodType>
+                            </Operation>
+                        </Operations>
+                        <Datatype>String</Datatype>
+                        <Action>String</Action>
+                        <attached>true</attached>
+                        <CmdType>0</CmdType>
+                        <CmdObject>1006</CmdObject>
+                    </DeviceMgmtProfile>
+                    <DeviceMgmtProfile>
+                        <ProfileName>Factory Reset</ProfileName>
+                        <Operations>
+                            <Operation>
+                                <Label>Reset</Label>
+                                <OperationType>X</OperationType>
+                                <MethodType>PUT</MethodType>
+                            </Operation>
+                        </Operations>
+                        <Datatype>Boolean</Datatype>
+                        <Action>String</Action>
+                        <CmdType>1</CmdType>
+                        <CmdObject>0</CmdObject>
+                    </DeviceMgmtProfile>
+                    <DeviceMgmtProfile>
+                        <ProfileName>Reboot</ProfileName>
+                        <Operations>
+                            <Operation>
+                                <Label>Reboot</Label>
+                                <OperationType>X</OperationType>
+                                <MethodType>PUT</MethodType>
+                            </Operation>
+                        </Operations>
+                        <Datatype>Boolean</Datatype>
+                        <Action>String</Action>
+                        <CmdType>2</CmdType>
+                        <CmdObject>0</CmdObject>
+                    </DeviceMgmtProfile>
+                </DeviceMgmtProfiles>
+            </ManagementOperation>
+            <ManagementOperation>
+                <name>Advanced</name>
+                <Identifier>Advanced</Identifier>
+                <DeviceMgmtProfiles>
+                    <DeviceMgmtProfile>
+                        <ProfileName>Advanced List</ProfileName>
+                        <Datatype>Advanced List</Datatype>
+                    </DeviceMgmtProfile>
+                </DeviceMgmtProfiles>
+            </ManagementOperation>
+        </ManagementOperations>
+    </DeviceMgmt>
+</DeviceProfile>

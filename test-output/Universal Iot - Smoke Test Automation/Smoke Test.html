@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>TestNG:  Smoke Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Smoke Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>14/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jun 27 15:34:08 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>305 seconds (305371 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>Smoke </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.automation.drivers.DriverScript_Smoke.CustMgmt_Create_Customer()'><b>CustMgmt_Create_Customer</b><br>Test class: com.automation.drivers.DriverScript_Smoke<br>Test method: Create Customer</td>
+<td></td>
+<td>15</td>
+<td>com.automation.drivers.DriverScript_Smoke@4ec6a292</td></tr>
+<tr>
+<td title='com.automation.drivers.DriverScript_Smoke.TestCase_80520()'><b>TestCase_80520</b><br>Test class: com.automation.drivers.DriverScript_Smoke<br>Test method: Login with Iot Admin User</td>
+<td></td>
+<td>10</td>
+<td>com.automation.drivers.DriverScript_Smoke@4ec6a292</td></tr>
+<tr>
+<td title='com.automation.drivers.DriverScript_Smoke.TestCase_80521()'><b>TestCase_80521</b><br>Test class: com.automation.drivers.DriverScript_Smoke<br>Test method: Create New User</td>
+<td></td>
+<td>30</td>
+<td>com.automation.drivers.DriverScript_Smoke@4ec6a292</td></tr>
+<tr>
+<td title='com.automation.drivers.DriverScript_Smoke.TestCase_80522()'><b>TestCase_80522</b><br>Test class: com.automation.drivers.DriverScript_Smoke<br>Test method: Create Group</td>
+<td></td>
+<td>21</td>
+<td>com.automation.drivers.DriverScript_Smoke@4ec6a292</td></tr>
+<tr>
+<td title='com.automation.drivers.DriverScript_Smoke.TestCase_80523()'><b>TestCase_80523</b><br>Test class: com.automation.drivers.DriverScript_Smoke<br>Test method: Verify New User's Access</td>
+<td></td>
+<td>11</td>
+<td>com.automation.drivers.DriverScript_Smoke@4ec6a292</td></tr>
+<tr>
+<td title='com.automation.drivers.DriverScript_Smoke.TestCase_80525()'><b>TestCase_80525</b><br>Test class: com.automation.drivers.DriverScript_Smoke<br>Test method: Container Upload</td>
+<td></td>
+<td>18</td>
+<td>com.automation.drivers.DriverScript_Smoke@4ec6a292</td></tr>
+<tr>
+<td title='com.automation.drivers.DriverScript_Smoke.TestCase_80526()'><b>TestCase_80526</b><br>Test class: com.automation.drivers.DriverScript_Smoke<br>Test method: Device Profile Upload</td>
+<td></td>
+<td>18</td>
+<td>com.automation.drivers.DriverScript_Smoke@4ec6a292</td></tr>
+<tr>
+<td title='com.automation.drivers.DriverScript_Smoke.TestCase_80527()'><b>TestCase_80527</b><br>Test class: com.automation.drivers.DriverScript_Smoke<br>Test method: Create New Asset</td>
+<td></td>
+<td>19</td>
+<td>com.automation.drivers.DriverScript_Smoke@4ec6a292</td></tr>
+<tr>
+<td title='com.automation.drivers.DriverScript_Smoke.TestCase_80528()'><b>TestCase_80528</b><br>Test class: com.automation.drivers.DriverScript_Smoke<br>Test method: Asset - Auto Provision</td>
+<td></td>
+<td>19</td>
+<td>com.automation.drivers.DriverScript_Smoke@4ec6a292</td></tr>
+<tr>
+<td title='com.automation.drivers.DriverScript_Smoke.TestCase_80530()'><b>TestCase_80530</b><br>Test class: com.automation.drivers.DriverScript_Smoke<br>Test method: Create New ACP</td>
+<td></td>
+<td>10</td>
+<td>com.automation.drivers.DriverScript_Smoke@4ec6a292</td></tr>
+<tr>
+<td title='com.automation.drivers.DriverScript_Smoke.TestCase_80531()'><b>TestCase_80531</b><br>Test class: com.automation.drivers.DriverScript_Smoke<br>Test method: Update ACP</td>
+<td></td>
+<td>19</td>
+<td>com.automation.drivers.DriverScript_Smoke@4ec6a292</td></tr>
+<tr>
+<td title='com.automation.drivers.DriverScript_Smoke.TestCase_80532()'><b>TestCase_80532</b><br>Test class: com.automation.drivers.DriverScript_Smoke<br>Test method: Create New Application</td>
+<td></td>
+<td>14</td>
+<td>com.automation.drivers.DriverScript_Smoke@4ec6a292</td></tr>
+<tr>
+<td title='com.automation.drivers.DriverScript_Smoke.TestCase_80533()'><b>TestCase_80533</b><br>Test class: com.automation.drivers.DriverScript_Smoke<br>Test method: Add a policy to New Application</td>
+<td></td>
+<td>13</td>
+<td>com.automation.drivers.DriverScript_Smoke@4ec6a292</td></tr>
+<tr>
+<td title='com.automation.drivers.DriverScript_Smoke.TestCase_80538()'><b>TestCase_80538</b><br>Test class: com.automation.drivers.DriverScript_Smoke<br>Test method: Add Device Controller</td>
+<td></td>
+<td>13</td>
+<td>com.automation.drivers.DriverScript_Smoke@4ec6a292</td></tr>
+</table><p>
+</body>
+</html>

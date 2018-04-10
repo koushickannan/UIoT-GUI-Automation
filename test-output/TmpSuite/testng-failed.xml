@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TmpSuite]">
+  <test name="TmpTest(failed)">
+    <classes>
+      <class name="drivers.DriverScript">
+        <methods>
+          <include name="TestCase_80528"/>
+          <include name="TestCase_80526"/>
+          <include name="TestCase_80537"/>
+          <include name="TestCase_80527"/>
+          <include name="TestCase_80538"/>
+          <include name="TestCase_80535"/>
+          <include name="TestCase_80525"/>
+          <include name="TestCase_80536"/>
+          <include name="TestCase_80522"/>
+          <include name="TestCase_80533"/>
+          <include name="exit"/>
+          <include name="TestCase_80523"/>
+          <include name="TestCase_80520"/>
+          <include name="TestCase_80531"/>
+          <include name="TestCase_80521"/>
+          <include name="TestCase_80532"/>
+          <include name="TestCase_80530"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- drivers.DriverScript -->
+    </classes>
+  </test> <!-- TmpTest(failed) -->
+</suite> <!-- Failed suite [TmpSuite] -->

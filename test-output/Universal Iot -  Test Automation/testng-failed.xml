@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Universal Iot -  Test Automation]">
+  <test name="Automation Test(failed)">
+    <classes>
+      <class name="com.automation.drivers.DriverScript_Smoke">
+        <methods>
+          <include name="CustMgmt_Create_Customer"/>
+          <include name="start"/>
+          <include name="connection_setup"/>
+          <include name="TestCase_80530"/>
+          <include name="clean"/>
+          <include name="TestCase_80531"/>
+          <include name="TestCase_80521"/>
+          <include name="TestCase_80532"/>
+          <include name="TestCase_80522"/>
+          <include name="TestCase_80533"/>
+          <include name="exit"/>
+          <include name="TestCase_80523"/>
+          <include name="TestCase_80525"/>
+          <include name="TestCase_80526"/>
+          <include name="TestCase_80527"/>
+          <include name="TestCase_80538"/>
+          <include name="TestCase_80528"/>
+        </methods>
+      </class> <!-- com.automation.drivers.DriverScript_Smoke -->
+      <class name="com.automation.drivers.DriverScript_BulkImport">
+        <methods>
+          <include name="CreateBulkImport_DecryptUplinkFlow_GU"/>
+          <include name="UpdateBulkImport_SimpleUplinkFlow_GU"/>
+          <include name="UpdateBulkImport_EncryptDownlinkFlow_GU"/>
+          <include name="CreateBulkImport_SimpleDownlinkFlow_GU"/>
+          <include name="DeleteBulkImport_SimpleUplinkFlow_GU"/>
+          <include name="DeleteBulkImport_EncryptDownlinkFlow_GU"/>
+          <include name="UploadDP1"/>
+          <include name="UploadDP4"/>
+          <include name="DeleteBulkImport_DecryptUplinkFlow_GU"/>
+          <include name="UpdateBulkImport_DecryptUplinkFlow_GU"/>
+          <include name="exit"/>
+          <include name="CreateBulkImport_SimpleUplinkFlow_GU"/>
+          <include name="UpdateBulkImport_SimpleDownlinkFlow_GU"/>
+          <include name="UploadCP"/>
+          <include name="CreateBulkImport_EncryptDownlinkFlow_GU"/>
+          <include name="DeleteBulkImport_SimpleDownlinkFlow_GU"/>
+        </methods>
+      </class> <!-- com.automation.drivers.DriverScript_BulkImport -->
+    </classes>
+  </test> <!-- Automation Test(failed) -->
+</suite> <!-- Failed suite [Universal Iot -  Test Automation] -->

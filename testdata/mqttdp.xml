@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><DeviceProfile xmlns="http://www.hp.com/schema/m2m/">
+    <Metadata>
+        <Manufacturer>bravo</Manufacturer>
+        <Model>Onem2mMQTT</Model>
+        <Version>1.4</Version>
+        <DeviceType>MQTT</DeviceType>
+        <DeviceSubType>Sensors</DeviceSubType>
+        <TransportChannel>mqttOnem2m</TransportChannel>
+        <Device-Description>MQTT Onem2m Device Controller</Device-Description>
+        <ClassOfDevice>DEFAULT</ClassOfDevice>
+        <DeviceProfileType>HPIOT</DeviceProfileType>
+        <OntologyReference xmlns:tns="http://www.hp.com/schema/m2m/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <AssetParams Category="IoT" DataType="String" Decoding="none" DefaultValue="" DisplayName="Device ID" Mandatory="true" MinLength="1" ParamName="DeviceID" ReadOnly="false"/>
+        <DeviceIdentifier>
+            <identifiers id="0" name="mqttfinal">
+                <identifier id="0" name="DeviceID">DeviceID</identifier>
+            </identifiers>
+            <identifiers id="1" name="IoT">
+                <identifier id="1" name="DeviceID">DeviceID</identifier>
+            </identifiers>
+        </DeviceIdentifier>
+        <TransportChannels>
+            <TransportChannel reestablishment="true">mqttOnem2m</TransportChannel>
+        </TransportChannels>
+        <MachineId>DeviceID</MachineId>
+    </Metadata>
+</DeviceProfile>

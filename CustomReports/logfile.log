@@ -1,0 +1,61 @@
+[2018-03-16 14:49:59 INFO  JDBCUtils:29] - Database Connection Method Called
+[2018-03-16 14:49:59 INFO  JDBCUtils:36] - Constructed Connection URL for the Database:	jdbc:postgresql://localhost:5444/drop2
+[2018-03-16 14:50:09 INFO  Base:189] - CONFIG : URL Loaded Successfully
+[2018-03-16 14:50:09 INFO  TestNgListeners:203] - ####################### IOT Automation Suite Started #######################
+[2018-03-16 14:50:09 INFO  TestNgListeners:204] - X
+[2018-03-16 14:50:09 INFO  TestNgListeners:205] - X
+[2018-03-16 14:50:09 INFO  TestNgListeners:44] - $$$$$$$$ VerifyCreateGroupRoleFunctionality - STARTED  $$$$$$$$
+[2018-03-16 14:50:12 INFO  ElementAction:171] - Select User
+[2018-03-16 14:50:13 INFO  ElementAction:41] - Enter User Name
+[2018-03-16 14:50:14 INFO  ElementAction:57] - Click on User Edit Icon
+[2018-03-16 14:50:18 INFO  ElementAction:57] - Click on Role drop down
+[2018-03-16 14:50:18 INFO  Users:83] - Role Name from Property file is USER_MANAGEMENT_ROLE_5377
+[2018-03-16 14:50:18 INFO  ElementAction:24] - Enter Role Name
+[2018-03-16 14:50:22 INFO  ElementAction:57] - Click on Role Drop Down List
+[2018-03-16 14:50:22 INFO  ElementAction:57] - Click on Update Button
+[2018-03-16 14:50:22 INFO  TestNGAssertions:79] - Actual ->Success
+User cenacust updated successfully.The user will have to log in again for this change to take effect., Expected ->Success,Assert Condition -> CONTAINS
+[2018-03-16 14:50:26 INFO  ElementAction:207] - Count of anchor Tiles
+[2018-03-16 14:50:26 INFO  ElementAction:207] - Count of div Tiles
+[2018-03-16 14:50:26 INFO  RoleMgmt:233] - Anchor Count = 1
+[2018-03-16 14:50:26 INFO  RoleMgmt:234] - Div Count = 1
+[2018-03-16 14:50:26 INFO  RoleMgmt:238] - Total Count of Tiles Displayed =2
+[2018-03-16 14:50:27 INFO  RoleMgmt:243] - Tile Displayed = Dashboard
+[2018-03-16 14:50:27 INFO  RoleMgmt:248] - Tile Displayed = Customer Mgmt.
+[2018-03-16 14:50:27 INFO  TestNGAssertions:30] - Actual ->2, Expected ->2,Assert Condition -> INT EQUALS
+[2018-03-16 14:50:34 INFO  ElementAction:57] - Click on Create Group
+[2018-03-16 14:50:36 INFO  ElementAction:57] - Click Group Radio Button
+[2018-03-16 14:50:36 INFO  ElementAction:24] - Enter Group Name
+[2018-03-16 14:50:39 INFO  ElementAction:57] - Click on Customer Drop Down
+[2018-03-16 14:50:39 INFO  ElementAction:24] - Enter Customer Name
+[2018-03-16 14:50:42 INFO  ElementAction:57] - Click on Customer Drop Down List
+[2018-03-16 14:50:45 INFO  ElementAction:24] - Enter Description
+[2018-03-16 14:50:45 INFO  ElementAction:73] - Click on Create Button
+[2018-03-16 14:50:48 INFO  SmokeTest:131] - Group Create : Group_Automation_5893
+[2018-03-16 14:50:48 INFO  TestNGAssertions:79] - Actual ->Success
+Group IOT.CENA.GROUP_AUTOMATION_5893 created successfully., Expected ->Success,Assert Condition -> CONTAINS
+[2018-03-16 14:51:07 INFO  ElementAction:171] - Select User
+[2018-03-16 14:51:08 INFO  ElementAction:41] - Enter User Name
+[2018-03-16 14:51:09 INFO  ElementAction:57] - Click on User Edit Icon
+[2018-03-16 14:51:12 INFO  ElementAction:57] - Click on Role drop down
+[2018-03-16 14:51:12 INFO  Users:83] - Role Name from Property file is DSM_ADMIN
+[2018-03-16 14:51:13 INFO  ElementAction:24] - Enter Role Name
+[2018-03-16 14:51:16 INFO  ElementAction:57] - Click on Role Drop Down List
+[2018-03-16 14:51:16 INFO  ElementAction:57] - Click on Update Button
+[2018-03-16 14:51:17 INFO  TestNGAssertions:79] - Actual ->Success
+User cenacust updated successfully.The user will have to log in again for this change to take effect., Expected ->Success,Assert Condition -> CONTAINS
+[2018-03-16 14:51:17 INFO  TestNgListeners:100] - $$$$$$$$ VerifyCreateGroupRoleFunctionality - PASSED  $$$$$$$$
+[2018-03-16 14:51:17 INFO  TestNgListeners:101] - X
+[2018-03-16 14:51:17 INFO  TestNgListeners:102] - X
+[2018-03-16 14:51:20 INFO  TestNgListeners:212] - X
+[2018-03-16 14:51:20 INFO  TestNgListeners:213] - X
+[2018-03-16 14:51:20 INFO  TestNgListeners:214] - @@@@@ SUMMARY @@@@@
+[2018-03-16 14:51:20 INFO  TestNgListeners:215] - Passed  : 1
+[2018-03-16 14:51:20 INFO  TestNgListeners:216] - Failed  : 0
+[2018-03-16 14:51:20 INFO  TestNgListeners:217] - Skipped : 0
+[2018-03-16 14:51:20 INFO  TestNgListeners:218] - Total   : 1
+[2018-03-16 14:51:20 INFO  TestNgListeners:219] - @@@@@ SUMMARY @@@@@
+[2018-03-16 14:51:21 INFO  Base:223] - CONFIG : Browser closed Successfully
+[2018-03-16 14:51:21 INFO  Base:224] - X
+[2018-03-16 14:51:21 INFO  Base:225] - X
+[2018-03-16 14:51:21 INFO  TestNgListeners:232] - ####################### IOT Automation Suite Ended #######################

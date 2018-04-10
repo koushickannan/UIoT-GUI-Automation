@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="yes"?>
+<ContainerProfile xmlns="http://www.hp.com/schema/m2m/">
+    <ContainerProfileName>Auto-Http-oneM2M_CP</ContainerProfileName>
+    <Containers>
+        <Container name="uplink1" parent="" acp="READ_ONLY" sequence="1">
+            <Payload xPath="sensor.data" value="value1" type="full"/>
+        </Container>
+        <Container name="uplink2" parent="uplink1" acp="READ_ONLY" sequence="2">
+            <Payload xPath="sensor.data" value="value2" type="full"/>
+        </Container>
+        <Container name="commands" parent="" acp="FullAccess" sequence="3" type="command" />
+    </Containers>
+</ContainerProfile>

@@ -1,0 +1,256 @@
+<?xml version="1.0" standalone="yes"?>
+<DeviceProfile xmlns="http://www.hp.com/schema/m2m/">
+    <Metadata>
+        <Manufacturer>QoS1</Manufacturer>
+        <Model>QoS1 Vehicle Transponder v13.0</Model>
+        <Version>1.4</Version>
+        <DeviceType>SENSOR</DeviceType>
+        <DeviceSubType>ECU</DeviceSubType>
+        <TransportChannel>MQTT</TransportChannel>
+        <Device-Description>Vehicle Sensors</Device-Description>
+        <ClassOfDevice>DEFAULT</ClassOfDevice>
+        <DeviceProfileType>HPIOT</DeviceProfileType>
+        <MessageFormat>Transponder</MessageFormat>
+        <Parameter name="DecodeInputKey" type="utf8-string">LORA-FRMPayloadClearText</Parameter>
+        <Parameter name="DecodeMode" type="utf8-string">APPEND</Parameter>
+        <Parameter name="DecodeType" type="utf8-string">AdeunisNetCoverage</Parameter>
+        <Parameter name="EncodeType" type="utf8-string">AdeunisNetCoverage</Parameter>
+        <Parameter name="EncodeInputKey" type="utf8-string">LORA-FRMPayload</Parameter>
+        <Parameter name="EncodeMode" type="utf8-string">APPEND</Parameter>
+        <Parameter name="UplinkPayloadXpath" type="utf8-string">LNS-UplinkData.LORA-FRMPayload</Parameter>
+        <Parameter name="DownlinkPayloadXpath" type="utf8-string">LORA-FRMPayloadClearText</Parameter>
+        <Parameter name="CRYPT_KEY_1" type="utf8-string">LNS-UplinkData.LNS-AppNonce</Parameter>
+        <Parameter name="CRYPT_KEY_2" type="utf8-string">LNS-UplinkData.LNS-DevNonce</Parameter>
+        <Parameter name="CRYPT_KEY_3" type="utf8-string">LNS-UplinkData.LNS-NetID</Parameter>
+        <Parameter name="CRYPT_KEY_4" type="utf8-string">LNS-UplinkData.LORA-DevAddr</Parameter>
+        <Parameter name="CRYPT_KEY_5" type="utf8-string">LNS-UplinkData.LORA-FCntUp</Parameter>
+        <Parameter name="CRYPT_KEY_6" type="utf8-string">LNS-DownlinkData.LORA-FCntDown</Parameter>
+        <Parameter name="EncryptionClearText" type="utf8-string">LORA-FRMPayloadClearText</Parameter>
+        <Parameter name="DecryptionClearText" type="utf8-string">LORA-FRMPayloadClearText</Parameter>
+        <Parameter name="Base64ToHex" type="boolean">true</Parameter>
+        <Parameter name="PropagateData" type="boolean">true</Parameter>
+        <OntologyReference xmlns:ns1="http://www.hp.com/schema/m2m/"/>
+		<AssetParams ParamName="QoS Class" DisplayName="QoS Class" Mandatory="false" ReadOnly="false" DataType="String" Category="IoT" Decoding="none" DefaultValue=""/>
+        <DeviceIdentifier>
+            <identifiers id="1" name="MQTTI">
+                <identifier id="1" name="DevEUI">DevEUI</identifier>
+            </identifiers>
+        </DeviceIdentifier>
+        <TransportChannels>
+            <TransportChannel reestablishment="false">OW</TransportChannel>
+        </TransportChannels>
+        <MachineId>DevEUI</MachineId>
+    </Metadata>
+    <Capabilities>
+        <Capability>
+            <Category>Identifier</Category>
+            <Name>DateTime</Name>
+            <DataType>datetime</DataType>
+            <Value xmlns:ns1="http://www.hp.com/schema/m2m/SEM/"/>
+            <Unit>datetime</Unit>
+            <acl>R</acl>
+        </Capability>
+        <Capability>
+            <Category>Identifier</Category>
+            <Name>BatteryLevel</Name>
+            <DataType>String</DataType>
+            <Value xmlns:ns1="http://www.hp.com/schema/m2m/SEM/"/>
+            <Unit></Unit>
+            <acl>R</acl>
+            <xpath>''UplinkIndication''-&gt;''CapturedObjects''-&gt;&gt;''BatteryLevel''</xpath>
+        </Capability>
+        <Capability>
+            <Category>Identifier</Category>
+            <Name>Lattitude</Name>
+            <DataType>String</DataType>
+            <Value xmlns:ns1="http://www.hp.com/schema/m2m/SEM/"/>
+            <Unit></Unit>
+            <acl>R</acl>
+            <xpath>''UplinkIndication''-&gt;''CapturedObjects''-&gt;&gt;''Lattitude''</xpath>
+        </Capability>
+        <Capability>
+            <Category>Identifier</Category>
+            <Name>Longitude</Name>
+            <DataType>String</DataType>
+            <Value xmlns:ns1="http://www.hp.com/schema/m2m/SEM/"/>
+            <Unit></Unit>
+            <acl>R</acl>
+            <xpath>''UplinkIndication''-&gt;''CapturedObjects''-&gt;&gt;''Longitude''</xpath>
+        </Capability>
+    </Capabilities>
+	<Commands>
+        <command>
+            <category>Management Commands</category>
+            <cmdName>Reboot</cmdName>
+            <description>Rboot</description>
+            <execMode>X</execMode>
+            <Args>
+                <Input>
+                    <param>
+                        <name>Test</name>
+                        <value>true</value>
+                    </param>
+                </Input>
+                <Output>
+                    <param>
+                        <name>Test</name>
+                        <value>True</value>
+                    </param>
+                </Output>
+            </Args>
+            <acl>X</acl>
+        </command>
+    </Commands>
+	<DeviceMgmt>
+        <ManagementOperations>
+            <ManagementOperation>
+                <name>Configuration</name>
+                <Identifier>Configuration</Identifier>
+                <DeviceMgmtProfiles>
+                    <DeviceMgmtProfile>
+                        <ProfileName>Device Information</ProfileName>
+                        <Operations>
+                            <Operation>
+                                <Label>Read</Label>
+                                <OperationType>R</OperationType>
+                                <MethodType>GET</MethodType>
+                            </Operation>
+                        </Operations>
+                        <Datatype>String</Datatype>
+                        <Action>getMetadata</Action>
+                        <attached>true</attached>
+                        <CmdType>0</CmdType>
+                        <CmdObject>1007</CmdObject>
+                    </DeviceMgmtProfile>
+                    <DeviceMgmtProfile>
+                        <ProfileName>Device Capabilities</ProfileName>
+                        <Datatype>String</Datatype>
+                        <SubProfile>
+                            <ProfileName>BatteryObserveEnable</ProfileName>
+                            <Operations>
+                                <Operation>
+                                    <Label>Enable/Disable</Label>
+                                    <OperationType>E</OperationType>
+                                    <MethodType>PUT</MethodType>
+                               </Operation>
+                            </Operations>
+                            <Datatype>Boolean</Datatype>
+                            <Action>String</Action>
+                            <value>true</value>
+                            <attached>true</attached>
+                            <CmdType>0</CmdType>
+                            <CmdObject>1008</CmdObject>
+                        </SubProfile>
+                        <SubProfile>
+                            <ProfileName>TimezoneObserveEnable</ProfileName>
+                            <Operations>
+                                <Operation>
+                                    <Label>Enable/Disable</Label>
+                                    <OperationType>E</OperationType>
+                                    <MethodType>PUT</MethodType>
+                                </Operation>
+                            </Operations>
+                            <Datatype>Boolean</Datatype>
+                            <Action>String</Action>
+                            <value>true</value>
+                            <attached>true</attached>
+                            <CmdType>0</CmdType>
+                            <CmdObject>1008</CmdObject>
+                        </SubProfile>
+                        <SubProfile>
+                            <ProfileName>MemoryObserveEnable</ProfileName>
+                            <Operations>
+                                <Operation>
+                                    <Label>Enable/Disable</Label>
+                                    <OperationType>E</OperationType>
+                                    <MethodType>PUT</MethodType>
+                                </Operation>
+                            </Operations>
+                            <Datatype>Boolean</Datatype>
+                            <Action>String</Action>
+                            <value>true</value>
+                            <attached>true</attached>
+                            <CmdType>0</CmdType>
+                            <CmdObject>1008</CmdObject>
+                        </SubProfile>
+                        <Identifier>deviceCapability</Identifier>
+                    </DeviceMgmtProfile>
+                </DeviceMgmtProfiles>
+            </ManagementOperation>
+            <ManagementOperation>
+                <name>Diagnostic and Monitoring</name>
+                <Identifier>Diagnostic and Monitoring</Identifier>
+                <DeviceMgmtProfiles>
+                    <DeviceMgmtProfile>
+                        <ProfileName>Memory</ProfileName>
+                        <Operations>
+                            <Operation>
+                                <Label>Read</Label>
+                                <OperationType>R</OperationType>
+                                <MethodType>GET</MethodType>
+                            </Operation>
+                        </Operations>
+                        <Datatype>String</Datatype>
+                        <Action>String</Action>
+                        <attached>true</attached>
+                        <CmdType>0</CmdType>
+                        <CmdObject>1003</CmdObject>
+                    </DeviceMgmtProfile>
+                    <DeviceMgmtProfile>
+                        <ProfileName>Battery</ProfileName>
+                        <Operations>
+                            <Operation>
+                                <Label>Read</Label>
+                                <OperationType>R</OperationType>
+                                <MethodType>GET</MethodType>
+                            </Operation>
+                        </Operations>
+                        <Datatype>String</Datatype>
+                        <Action>String</Action>
+                        <attached>true</attached>
+                        <CmdType>0</CmdType>
+                        <CmdObject>1006</CmdObject>
+                    </DeviceMgmtProfile>
+                    <DeviceMgmtProfile>
+                        <ProfileName>Factory Reset</ProfileName>
+                        <Operations>
+                            <Operation>
+                                <Label>Reset</Label>
+                                <OperationType>X</OperationType>
+                                <MethodType>PUT</MethodType>
+                            </Operation>
+                        </Operations>
+                        <Datatype>Boolean</Datatype>
+                        <Action>String</Action>
+                        <CmdType>1</CmdType>
+                        <CmdObject>0</CmdObject>
+                    </DeviceMgmtProfile>
+                    <DeviceMgmtProfile>
+                        <ProfileName>Reboot</ProfileName>
+                        <Operations>
+                            <Operation>
+                                <Label>Reboot</Label>
+                                <OperationType>X</OperationType>
+                                <MethodType>PUT</MethodType>
+                            </Operation>
+                        </Operations>
+                        <Datatype>Boolean</Datatype>
+                        <Action>String</Action>
+                        <CmdType>2</CmdType>
+                        <CmdObject>1009</CmdObject>
+                    </DeviceMgmtProfile>
+                </DeviceMgmtProfiles>
+            </ManagementOperation>
+                          <ManagementOperation>
+                <name>Advanced</name>
+                <Identifier>Advanced</Identifier>
+                <DeviceMgmtProfiles>
+                    <DeviceMgmtProfile>
+                        <ProfileName>Advanced List</ProfileName>
+                        <Datatype>Advanced List</Datatype>
+                    </DeviceMgmtProfile>
+                </DeviceMgmtProfiles>
+            </ManagementOperation>
+        </ManagementOperations>
+    </DeviceMgmt>
+</DeviceProfile>

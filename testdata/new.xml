@@ -1,0 +1,92 @@
+<?xml version="1.0" standalone="yes"?>
+<DeviceProfile xmlns="http://www.hp.com/schema/m2m/">
+    <Metadata>
+        <Manufacturer>Rohit</Manufacturer>
+        <Model>Manish-v-1.4</Model>
+        <Version>1.4</Version>
+        <DeviceType>SENSOR</DeviceType>
+        <DeviceSubType>ECU</DeviceSubType>
+        <TransportChannel>MQTT</TransportChannel>
+        <Device-Description>Vehicle Sensors</Device-Description>
+        <ClassOfDevice>DEFAULT</ClassOfDevice>
+        <DeviceProfileType>HPIOT</DeviceProfileType>
+        <MessageFormat>Transponder</MessageFormat>
+        <Parameter name="DecodeInputKey" type="long-unsigned">LORA-FRMPayloadClearText</Parameter>
+        <Parameter name="DecodeMode" type="long-unsigned">APPEND</Parameter>
+        <Parameter name="DecodeType" type="long-unsigned">AdeunisNetCoverage</Parameter>
+        <Parameter name="EncodeType" type="long-unsigned">AdeunisNetCoverage</Parameter>
+        <Parameter name="EncodeInputKey" type="long-unsigned"></Parameter>
+        <Parameter name="EncodeMode" type="long-unsigned">LORA-FRMPayloadClearText</Parameter>
+        <Parameter name="UplinkPayloadXpath" type="long-unsigned">LNS-UplinkData.LORA-FRMPayload</Parameter>
+        <Parameter name="DownlinkPayloadXpath" type="long-unsigned">LORA-FRMPayloadClearText</Parameter>
+        <Parameter name="CRYPT_KEY_1" type="long-unsigned">LNS-UplinkData.LNS-AppNonce</Parameter>
+        <Parameter name="CRYPT_KEY_2" type="long-unsigned">LNS-UplinkData.LNS-DevNonce</Parameter>
+        <Parameter name="CRYPT_KEY_3" type="long-unsigned">LNS-UplinkData.LNS-NetID</Parameter>
+        <Parameter name="CRYPT_KEY_4" type="long-unsigned">LNS-UplinkData.LORA-DevAddr</Parameter>
+        <Parameter name="CRYPT_KEY_5" type="long-unsigned">LNS-UplinkData.LORA-FCntUp</Parameter>
+        <Parameter name="CRYPT_KEY_6" type="long-unsigned">LNS-DownlinkData.LORA-FCntDown</Parameter>
+        <Parameter name="EncryptionClearText" type="long-unsigned">LORA-FRMPayloadClearText</Parameter>
+        <Parameter name="DecryptionClearText" type="long-unsigned">LORA-FRMPayloadClearText</Parameter>
+        <Parameter name="Base64ToHex" type="long-unsigned">true</Parameter>
+            <Parameter name="PropagateData" type="long-unsigned">false</Parameter>
+
+        <OntologyReference xmlns:ns1="http://www.hp.com/schema/m2m/"/>
+        <AssetParams ParamName="MACADDRESS" DisplayName="MACADDRESS" Mandatory="false" ReadOnly="false" DataType="String" Category="IoT" Decoding="none" DefaultValue=""/>
+        <AssetParams ParamName="FlowId" DisplayName="FlowId" Mandatory="false" ReadOnly="false" DataType="String" Category="IoT" Decoding="none" DefaultValue=""/>
+        <AssetParams ParamName="Decode" DisplayName="Decode" Mandatory="false" ReadOnly="false" DataType="boolean" Category="IoT" Decoding="none" DefaultValue=""/>
+        <AssetParams ParamName="Decryption" DisplayName="Decryption" Mandatory="false" ReadOnly="false" DataType="boolean" Category="IoT" Decoding="none" DefaultValue=""/>
+        <AssetParams ParamName="TestProfile" DisplayName="TestProfile" Mandatory="false" ReadOnly="false" DataType="boolean" Category="IoT" Decoding="none" DefaultValue=""/>
+
+        
+
+        <DeviceIdentifier>
+            <identifiers id="1" name="MQTTI">
+                <identifier id="1" name="DevEUI">DevEUI</identifier>
+            </identifiers>
+        </DeviceIdentifier>
+        <TransportChannels>
+            <TransportChannel reestablishment="false">MQTT</TransportChannel>
+        </TransportChannels>
+        <MachineId>MACADDRESS</MachineId>
+    </Metadata>
+    <Capabilities>
+        <Capability>
+            <Category>Identifier</Category>
+            <Name>DateTime</Name>
+            <DataType>datetime</DataType>
+            <Value xmlns:ns1="http://www.hp.com/schema/m2m/SEM/"/>
+            <Unit>datetime</Unit>
+            <acl>R</acl>
+        </Capability>
+        <Capability>
+            <Category>Identifier</Category>
+            <Name>BatteryLevel</Name>
+            <DataType>String</DataType>
+            <Value xmlns:ns1="http://www.hp.com/schema/m2m/SEM/"/>
+            <Unit></Unit>
+            <acl>R</acl>
+            <xpath>'UplinkIndication'-&gt;'CapturedObjects'-&gt;&gt;'BatteryLevel'</xpath>
+        </Capability>
+        <Capability>
+            <Category>Identifier</Category>
+            <Name>Lattitude</Name>
+            <DataType>String</DataType>
+            <Value xmlns:ns1="http://www.hp.com/schema/m2m/SEM/"/>
+            <Unit></Unit>
+            <acl>R</acl>
+            <xpath>'UplinkIndication'-&gt;'CapturedObjects'-&gt;&gt;'Lattitude'</xpath>
+        </Capability>
+        <Capability>
+            <Category>Identifier</Category>
+            <Name>Longitude</Name>
+            <DataType>String</DataType>
+            <Value xmlns:ns1="http://www.hp.com/schema/m2m/SEM/"/>
+            <Unit></Unit>
+            <acl>R</acl>
+            <xpath>'UplinkIndication'-&gt;'CapturedObjects'-&gt;&gt;'Longitude'</xpath>
+        </Capability>
+    </Capabilities>
+</DeviceProfile>
+
+
+

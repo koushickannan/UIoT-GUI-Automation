@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Universal Iot -  Test Automation" verbose="1" >
+ <listeners>
+ 
+<listener class-name="com.hpe.testng.TestNGAnnotationTransformer"></listener>
+
+ 
+ 
+ </listeners>
+  <test name="Automation Test" >
+    <classes>
+      <class name="com.automation.drivers.DriverScript_Smoke"/>
+      <class name="com.hpe.iot.api.drivers.Smoke_API"/>
+      <class name="com.automation.drivers.DriverScript_CriticalRegression"/>
+      <class name="com.automation.drivers.DriverScript_CriticalRegression_2"/>
+      <class name="com.automation.drivers.DriverScript_CriticalRegression_1_4"/>
+      <class name="com.hpe.iot.e2eflows.Driver_E2EFlows"/>
+      <class name="com.automation.drivers.DriverScript_RoleMgmt"/>
+      <class name="com.automation.drivers.DriverScript_RoutingRule"/>
+      <class name="com.automation.drivers.DriverScript_BulkImport"/>
+      <class name="com.automation.drivers.DriverScript_UoC"/>
+    </classes>
+ </test>
+</suite>

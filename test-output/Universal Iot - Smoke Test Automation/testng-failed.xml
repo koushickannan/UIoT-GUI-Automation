@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Universal Iot - Smoke Test Automation]">
+  <test name="Smoke Test(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.automation.drivers.DriverScript_Smoke">
+        <methods>
+          <include name="CustMgmt_Create_Customer"/>
+          <include name="TestCase_80530"/>
+          <include name="TestCase_80520"/>
+          <include name="TestCase_80531"/>
+          <include name="TestCase_80521"/>
+          <include name="TestCase_80532"/>
+          <include name="TestCase_80522"/>
+          <include name="TestCase_80533"/>
+          <include name="TestCase_80523"/>
+          <include name="TestCase_80525"/>
+          <include name="TestCase_80526"/>
+          <include name="TestCase_80527"/>
+          <include name="TestCase_80538"/>
+          <include name="TestCase_80528"/>
+        </methods>
+      </class> <!-- com.automation.drivers.DriverScript_Smoke -->
+      <class name="com.automation.drivers.DriverScript_CriticalRegression">
+        <methods>
+          <include name="start"/>
+        </methods>
+      </class> <!-- com.automation.drivers.DriverScript_CriticalRegression -->
+    </classes>
+  </test> <!-- Smoke Test(failed) -->
+</suite> <!-- Failed suite [Universal Iot - Smoke Test Automation] -->

@@ -1,0 +1,117 @@
+<?xml version="1.0" standalone="yes"?>
+<DeviceProfile xmlns="http://www.hp.com/schema/m2m/">
+    <Metadata>
+        <Manufacturer>MQTT</Manufacturer>
+        <Model>Decryption</Model>
+        <Version>2.0</Version>
+        <DeviceType>SENSOR</DeviceType>
+        <DeviceSubType>LORA</DeviceSubType>
+        <Device-Description>Device Sensors</Device-Description>
+        <ClassOfDevice>DEFAULT</ClassOfDevice>
+        <DeviceProfileType>HPIOT</DeviceProfileType>
+        <MessageFormat>Transponder</MessageFormat>
+        <Parameter name="String" type="long-unsigned"></Parameter>
+        <Parameter name="DecodeInputKey" type="utf8-string">LORA-FRMPayloadClearText</Parameter>
+        <Parameter name="DecodeMode" type="utf8-string">APPEND</Parameter>
+        <Parameter name="DecodeType" type="utf8-string">AdeunisNetCoverage</Parameter>
+        <Parameter name="EncodeType" type="utf8-string">AdeunisNetCoverage</Parameter>
+        <Parameter name="EncodeInputKey" type="utf8-string">LORA-FRMPayload</Parameter>
+        <Parameter name="EncodeMode" type="utf8-string">APPEND</Parameter>
+        <Parameter name="UplinkPayloadXpath" type="utf8-string">payloads_ul.dataFrame</Parameter>
+        <Parameter name="DownlinkPayloadXpath" type="utf8-string">payload_dl.data</Parameter>
+        <Parameter name="CRYPT_KEY_1" type="utf8-string">payloads_ul.appnounce</Parameter>
+        <Parameter name="CRYPT_KEY_2" type="utf8-string">payloads_ul.devnounce</Parameter>
+        <Parameter name="CRYPT_KEY_3" type="utf8-string">payloads_ul.netid</Parameter>
+        <Parameter name="CRYPT_KEY_4" type="utf8-string">payload_dl.devaddress</Parameter>
+        <Parameter name="CRYPT_KEY_5" type="utf8-string">payloads_ul.deveui</Parameter>
+        <Parameter name="CRYPT_KEY_6" type="utf8-string">payload_dl.fcnt</Parameter>
+        <Parameter name="CRYPT_KEY_7" type="utf8-string">payloads_ul.fcnt</Parameter>
+        <Parameter name="EncryptionClearText" type="utf8-string">LORA-FRMPayloadClearText</Parameter>
+        <Parameter name="DecryptionClearText" type="utf8-string">LORA-FRMPayloadClearText</Parameter>
+        <Parameter name="Base64ToHex" type="boolean">true</Parameter>
+        <Parameter name="PropagateData" type="boolean">false</Parameter>
+        <Parameter name="Encryption_Decryption_Type" type="utf8-string">AES/ECB/NOPADDING</Parameter>
+        <OntologyReference xmlns:ns1="http://www.hp.com/schema/m2m/"/>
+        <AssetParams ParamName="DevEUI" DisplayName="DevEUI" Mandatory="true" ReadOnly="false" DataType="String" Category="IoT" Decoding="none" MaxLength="16" MinLength="0" DefaultValue=""/>
+        <AssetParams ParamName="AppEUI" DisplayName="AppEUI" Mandatory="true" ReadOnly="true" DataType="String" Category="IoT" Decoding="none" MaxLength="16" MinLength="0" DefaultValue=""/>
+        <AssetParams ParamName="DevAddr" DisplayName="DevAddr" Mandatory="true" ReadOnly="false" DataType="String" Category="IoT" Decoding="none" MaxLength="16" MinLength="0" DefaultValue=""/>
+        <AssetParams ParamName="appskey" DisplayName="AppSKey" Mandatory="false" isKey="true" autoGenerateKey="true" AdapterId="UIoT_KEY_GEN" ReadOnly="true" DataType="String" Category="IoT" Decoding="none" MaxLength="32" MinLength="0" DefaultValue="3E5C3F4C942D567577748FCC85DF2290"/>
+        <AssetParams ParamName="FlowId" DisplayName="Flow" Mandatory="true" ReadOnly="false" DataType="Choice" Category="IoT" Decoding="none" MaxLength="16" MinLength="0" ChoiceElements="GenericFlow,Non-GenericFlow"/>
+        <AssetParams ParamName="Decode" DisplayName="Decode" Mandatory="false" ReadOnly="false" DataType="boolean" Category="IoT" Decoding="none" DefaultValue=""/>
+        <AssetParams ParamName="Decryption" DisplayName="Decryption" Mandatory="false" ReadOnly="false" DataType="boolean" Category="IoT" Decoding="none" DefaultValue=""/>
+        <AssetParams ParamName="TestProfile" DisplayName="TestProfile" Mandatory="false" ReadOnly="false" DataType="boolean" Category="IoT" Decoding="none" DefaultValue=""/>
+        <AssetParams ParamName="Encode" DisplayName="Encode" Mandatory="false" ReadOnly="false" DataType="boolean" Category="IoT" Decoding="none" DefaultValue=""/>
+        <AssetParams ParamName="Encryption" DisplayName="Encryption" Mandatory="false" ReadOnly="false" DataType="boolean" Category="IoT" Decoding="none" DefaultValue=""/>
+        <AssetParams ParamName="PreferedDC" DisplayName="PreferedDC" Mandatory="false" ReadOnly="false" DataType="Choice" Category="IoT" Decoding="none" MaxLength="16" MinLength="0" ChoiceElements="mqttOnem2m"/>
+        <AssetParams ParamName="KMSLogicalName" DisplayName="KMSLogicalName" Mandatory="false" ReadOnly="false" DataType="String" Category="IoT" Decoding="none" DefaultValue="appskey"/>
+        <DeviceIdentifier>
+            <identifiers id="1" name="IoT">
+                <identifier id="1" name="DevEUI">DevEUI</identifier>
+            </identifiers>
+        </DeviceIdentifier>
+        <TransportChannels>
+            <TransportChannel reestablishment="false">mqttOnem2m</TransportChannel>
+        </TransportChannels>
+        <MachineId>DevEUI</MachineId>
+    </Metadata>
+    <Capabilities>
+        <Capability>
+            <Category>Identifier</Category>
+            <Name>DateTime</Name>
+            <DataType>datetime</DataType>
+            <Value xmlns:ns1="http://www.hp.com/schema/m2m/SEM/"/>
+            <Unit>datetime</Unit>
+            <acl>R</acl>
+        </Capability>
+        <Capability>
+            <Category>Identifier</Category>
+            <Name>AccelerometerTriggered'</Name>
+            <DataType>Number</DataType>
+            <Value xmlns:ns1="http://www.hp.com/schema/m2m/SEM/"/>
+            <Unit></Unit>
+            <acl>R</acl>
+            <xpath>'payloads.ul'-&gt;'CapturedObjects'-&gt;&gt;'AccelerometerTriggered''</xpath>
+        </Capability>
+        <Capability>
+            <Category>Identifier</Category>
+            <Name>Lattitude</Name>
+            <DataType>String</DataType>
+            <Value xmlns:ns1="http://www.hp.com/schema/m2m/SEM/"/>
+            <Unit></Unit>
+            <acl>R</acl>
+            <xpath>'payloads_ul-&gt;'CapturedObjects'-&gt;'Lattitude'</xpath>
+        </Capability>
+        <Capability>
+            <Category>Identifier</Category>
+            <Name>Longitude</Name>
+            <DataType>String</DataType>
+            <Value xmlns:ns1="http://www.hp.com/schema/m2m/SEM/"/>
+            <Unit></Unit>
+            <acl>R</acl>
+            <xpath>'payloads_ul-&gt;'CapturedObjects'-&gt;'Longitude'</xpath>
+        </Capability>
+    </Capabilities>
+    <Commands>
+        <command>
+            <category>Management Commands</category>
+            <cmdName>Reboot</cmdName>
+            <description>Rboot</description>
+            <execMode>X</execMode>
+            <Args>
+                <Input>
+                    <param>
+                        <name>Test</name>
+                        <value>true</value>
+                    </param>
+                </Input>
+                <Output>
+                    <param>
+                        <name>Test</name>
+                        <value>True</value>
+                    </param>
+                </Output>
+            </Args>
+            <acl>X</acl>
+        </command>
+    </Commands>
+</DeviceProfile>

@@ -1,0 +1,1 @@
+UPDATE,httped5299,SENSOR,localhost,,Encrypt#Decrypt#4.0,,Active,,,TRUE,BASIC_AUTH,httped9704#password@123,,,TRUE,TRUE,[HTTP#False],[DevEUI#httped4555,AppEUI#httped2246,DevAddr#BulkDevice5950,FlowId#GenericFlow,TestProfile#false,Encode#true,Decode#true,Decryption#true,Encryption#true,PreferedDC#http_oneM2M,appskey#3E5C3F4C942D567577748FCC85DF2290,KMSLogicalName#appskey]
